@@ -1,0 +1,3 @@
+com\MySQL\rest_api_my_sql\TestRestApiMySqlApplication.class
+com\MySQL\rest_api_my_sql\TestcontainersConfiguration.class
+com\MySQL\rest_api_my_sql\RestApiMySqlApplicationTests.class
