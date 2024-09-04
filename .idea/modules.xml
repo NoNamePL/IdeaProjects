@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AudioPlayer/AudioPlayer.iml" filepath="$PROJECT_DIR$/AudioPlayer/AudioPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bank/Bank.iml" filepath="$PROJECT_DIR$/Bank/Bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BrickBreakerGame/BrickBreakerGame.iml" filepath="$PROJECT_DIR$/BrickBreakerGame/BrickBreakerGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChatApplication/ChatApplication.iml" filepath="$PROJECT_DIR$/ChatApplication/ChatApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CurrencyChecker/CurrencyChecker.iml" filepath="$PROJECT_DIR$/CurrencyChecker/CurrencyChecker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Digital Clock/Digital Clock.iml" filepath="$PROJECT_DIR$/Digital Clock/Digital Clock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProjects.iml" filepath="$PROJECT_DIR$/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NewProject/NewProject.iml" filepath="$PROJECT_DIR$/NewProject/NewProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OnGuideToPskov/OnGuideToPskov.iml" filepath="$PROJECT_DIR$/OnGuideToPskov/OnGuideToPskov.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SuperMarketBillingSystem/SuperMarketBillingSystem.iml" filepath="$PROJECT_DIR$/SuperMarketBillingSystem/SuperMarketBillingSystem.iml" />
+    </modules>
+  </component>
+</project>

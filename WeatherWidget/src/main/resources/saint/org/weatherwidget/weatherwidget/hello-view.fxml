@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="saint.org.weatherwidget.weatherwidget.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="80.0" prefWidth="500.0">
+      <children>
+         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@img/cloudy.png" />
+            </image>
+         </ImageView>
+         <Label fx:id="temperature" alignment="CENTER" prefHeight="80.0" prefWidth="80.0" text="22" textAlignment="CENTER" textFill="#757575">
+            <font>
+               <Font size="35.0" />
+            </font>
+         </Label>
+         <Label text="°C">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+      </children></HBox>
+   <LineChart id="lineChart" fx:id="lineChart" title="weather">
+     <xAxis>
+       <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+     </xAxis>
+     <yAxis>
+       <NumberAxis fx:id="yAxis" side="LEFT" />
+     </yAxis>
+   </LineChart>
+
+    <Label fx:id="welcomeText" />
+    <Label text="This is a simple demo application" />
+    <Button onAction="#onHelloButtonClick" text="Hello!" />
+</VBox>
