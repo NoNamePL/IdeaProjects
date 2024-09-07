@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### myAdd ###
+!**/src/main/resources/saint/org/weatherwidget/weatherwidget/logfile.json
