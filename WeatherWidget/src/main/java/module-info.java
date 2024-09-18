@@ -2,6 +2,10 @@ module saint.org.weatherwidget.weatherwidget {
     requires javafx.controls;
     requires javafx.fxml;
     requires com.fasterxml.jackson.databind;
+    exports saint.org.weatherwidget.weatherwidget.FileData;
+    exports saint.org.weatherwidget.weatherwidget.WeatherDate;
+    requires static lombok;
+    requires com.google.gson;
 
 
     opens saint.org.weatherwidget.weatherwidget to javafx.fxml;
