@@ -40,3 +40,4 @@ build/
 ### myAdd ###
 !**/src/main/resources/saint/org/weatherwidget/weatherwidget/logfile.json
 src/main/resources/saint/org/weatherwidget/weatherwidget/logfile.json
+saint/org/weatherwidget/weatherwidget/logfile.json
