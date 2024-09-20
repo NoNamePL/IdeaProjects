@@ -13,12 +13,12 @@
     </padding>
    <HBox prefHeight="80.0" prefWidth="500.0">
       <children>
-         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+         <ImageView fx:id="weatherImage" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
             <image>
-               <Image url="@img/cloudy.png" />
+               <Image url="@img/sunset.png"/>
             </image>
          </ImageView>
-         <Label fx:id="temperature" alignment="CENTER" prefHeight="80.0" prefWidth="80.0" text="22" textAlignment="CENTER" textFill="#757575">
+         <Label fx:id="currentTempLab" alignment="CENTER" prefHeight="80.0" prefWidth="90.0" text="22" textAlignment="CENTER" textFill="#757575">
             <font>
                <Font size="35.0" />
             </font>
