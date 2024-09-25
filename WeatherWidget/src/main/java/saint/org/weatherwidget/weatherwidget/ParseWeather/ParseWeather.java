@@ -29,7 +29,7 @@ public class ParseWeather {
 
     }
 
-    public FileData getDatas() throws IOException {
+    public static FileData getDatas() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
 
         // read file
