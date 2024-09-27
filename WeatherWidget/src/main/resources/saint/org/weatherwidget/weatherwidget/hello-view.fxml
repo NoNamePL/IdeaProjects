@@ -28,17 +28,17 @@
                <Font size="20.0" />
             </font>
          </Label>
-         <Label prefHeight="79.0" prefWidth="100.0" text="Label" textFill="#757575">
+         <Label prefHeight="79.0" prefWidth="100.0" textFill="#757575">
             <font>
                <Font size="25.0" />
             </font>
          </Label>
-         <Label prefHeight="80.0" prefWidth="100.0" text="Label" textFill="#757575">
+         <Label fx:id="dollar" prefHeight="80.0" prefWidth="100.0" textFill="#757575">
             <font>
                <Font size="25.0" />
             </font>
          </Label>
-         <Label prefHeight="80.0" prefWidth="100.0" text="Label" textFill="#757575">
+         <Label fx:id="euro" prefHeight="80.0" prefWidth="100.0" textFill="#757575">
             <font>
                <Font size="25.0" />
             </font>

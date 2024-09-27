@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import saint.org.weatherwidget.weatherwidget.FileData.FileData;
 import saint.org.weatherwidget.weatherwidget.ParseWeather.ParseWeather;
@@ -20,6 +21,7 @@ import java.util.Currency;
 @Setter
 @Getter
 @AllArgsConstructor
+@NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Cur {
@@ -35,10 +37,11 @@ public class Cur {
 
         // Full url string
         FileData logfile = ParseWeather.getDatas();
-        fullUrl = String.format(fullUrl, logfile.getAccess_key());
+        String result = "https://api.currencylayer.com/convert?access_key=%s&from=%s&to=RUB&amount=1";
+        result = String.format(result, logfile.getAccess_key(),fullUrl);
 
 
-        URL url = new URL(fullUrl);
+        URL url = new URL(result);
         HttpURLConnection con =  (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
 

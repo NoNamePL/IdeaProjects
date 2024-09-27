@@ -15,6 +15,8 @@ import saint.org.weatherwidget.weatherwidget.FileData.FileData;
 import saint.org.weatherwidget.weatherwidget.ParseWeather.ParseWeather;
 import saint.org.weatherwidget.weatherwidget.WeatherDate.WeatherDate;
 
+import java.io.IOException;
+
 
 public class HelloController {
     @FXML
@@ -22,9 +24,13 @@ public class HelloController {
 
     @FXML
     public LineChart<String,Number> lineChart;
-    @FXML
 
+    @FXML
     public ImageView weatherImage;
+    @FXML
+    public Label dollar;
+    @FXML
+    public Label euro;
     @FXML
     private CategoryAxis xAxis;
     @FXML
@@ -104,8 +110,20 @@ public class HelloController {
                 break;
         }
 
-        Cur dollars = Cur.getCurCurrency("https://api.currencylayer.com/convert?access_key=&from=USD&to=RUB&amount=100");
-        System.out.println(cur.getDollar().toString());
+        // Parse date from currency cite
+        Cur dollars = null;
+        Cur euros = null;
+
+        try {
+            dollars = Cur.getCurCurrency("USD");
+            euros = Cur.getCurCurrency("EUR");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        // paste result of parse to label
+        dollar.setText(String.valueOf((int)dollars.getResult()));
+        euro.setText(String.valueOf((int)euros.getResult()));
 
         series.setName("Number of temperatures");
 

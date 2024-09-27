@@ -4,6 +4,7 @@ module saint.org.weatherwidget.weatherwidget {
     requires com.fasterxml.jackson.databind;
     exports saint.org.weatherwidget.weatherwidget.FileData;
     exports saint.org.weatherwidget.weatherwidget.WeatherDate;
+    exports saint.org.weatherwidget.weatherwidget.Cur;
     requires static lombok;
     requires com.google.gson;
 
